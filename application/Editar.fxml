@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="140.0" prefWidth="222.0" style="-fx-background-color: #8080FF;" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="application.EditarController">
+   <children>
+      <Button fx:id="listoBTN" layoutX="106.0" layoutY="94.0" mnemonicParsing="false" onAction="#Listo" stylesheets="@application.css" text="Listo" />
+      <TextField fx:id="contentTF" layoutX="52.0" layoutY="63.0" />
+      <ToggleButton fx:id="etiquetaBTN" layoutX="52.0" layoutY="22.0" mnemonicParsing="false" onAction="#Cambiar" text="Etiqueta" />
+      <ToggleButton fx:id="contrasenaBTN" layoutX="132.0" layoutY="22.0" mnemonicParsing="false" onAction="#Cambiar" text="Contraseña" />
+   </children>
+</AnchorPane>

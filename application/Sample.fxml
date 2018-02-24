@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="304.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <PasswordField fx:id="pwd" layoutX="14.0" layoutY="159.0" />
+      <Label fx:id="title" layoutX="14.0" layoutY="8.0" text="Password Mage">
+         <font>
+            <Font name="Georgia" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="130.0" text="Crear contraseña:" />
+      <Button fx:id="ListoBTN" layoutX="14.0" layoutY="260.0" mnemonicParsing="false" onAction="#Verify" text="Listo" />
+      <PasswordField fx:id="pwdConfirm" layoutX="14.0" layoutY="218.0" />
+      <Label layoutX="14.0" layoutY="193.0" text="Confirmar contraseña:" />
+      <ImageView fx:id="image" fitHeight="296.0" fitWidth="310.0" layoutX="148.0" layoutY="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../logoPasswordMage.png" />
+         </image>
+         <effect>
+            <DropShadow height="40.0" offsetX="10.0" radius="19.5" width="40.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="72.0" text="Nombre de Usuario" />
+      <TextField fx:id="userName" layoutX="14.0" layoutY="89.0" />
+   </children>
+</AnchorPane>

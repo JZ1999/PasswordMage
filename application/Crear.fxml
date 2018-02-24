@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="302.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CrearController">
+   <children>
+      <Button fx:id="guardarBTN" layoutX="69.0" layoutY="255.0" mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+      <Button fx:id="generarBTN" layoutX="271.0" layoutY="60.0" mnemonicParsing="false" onAction="#Generar" text="Generar" />
+      <TextField fx:id="newEtiqueta" layoutX="24.0" layoutY="200.0" prefHeight="25.0" prefWidth="231.0" promptText="i.e Facebook" />
+      <TextField fx:id="newContra" layoutX="24.0" layoutY="60.0" prefHeight="25.0" prefWidth="231.0" promptText="i.e contra123321" />
+      <Label layoutX="24.0" layoutY="38.0" text="Contraseña" />
+      <Label layoutX="32.0" layoutY="165.0" text="Etiqueta" />
+      <CheckBox fx:id="AlfabetoCHK" layoutX="414.0" layoutY="64.0" mnemonicParsing="false" selected="true" text="Alfabeto " />
+      <CheckBox fx:id="NumerosCHK" layoutX="414.0" layoutY="92.0" mnemonicParsing="false" text="Numeros" />
+      <CheckBox fx:id="ArrobaCHK" layoutX="414.0" layoutY="122.0" mnemonicParsing="false" text="\@" />
+      <CheckBox fx:id="BarrabajaCHK" layoutX="414.0" layoutY="148.0" mnemonicParsing="false" text="_" />
+      <Slider fx:id="tamanoSL" blockIncrement="1.0" layoutX="407.0" layoutY="28.0" majorTickUnit="1.0" max="20.0" min="12.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="12.0" />
+      <Label layoutX="404.0" layoutY="6.0" text="Tamaño:" />
+   </children>
+</AnchorPane>
